@@ -62,7 +62,7 @@ public class MakeHashMap {
 
     public void put(String key, Object value) {
 
-        vaildParameter(key, value);
+        validParameter(key, value);
 
         int h = getHash(key);
         int idx = getHashIndex(h);
@@ -82,7 +82,7 @@ public class MakeHashMap {
         nodes.add(newNode);
     }
 
-    private void vaildParameter(String key, Object value) {
+    private void validParameter(String key, Object value) {
         if(key == null)
             throw new IllegalArgumentException("key is Null");
 
